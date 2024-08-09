@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{%block title%} User - Home {%endblock%}
+
+{%block content%}
+    <h1>User Settings</h1><br>
+    <p>Welcome, {{user.username}}.</p>
+    <a class="btn btn-primary" href="{%url 'logout_user'%}">Logout</a>
+{%endblock%}

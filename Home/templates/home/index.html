@@ -1,0 +1,10 @@
+{% extends "../base.html" %}
+{% load static %}
+
+{%block title%} Home {%endblock%}
+
+{%block content%}
+    <h1>Home</h1>
+    <br><p>RedditTTS allows you to select Reddit posts to turn into AI generated videos.</p>
+    <a href="{%url 'select_posts' %}" class="btn btn-primary">Go to RedditTTS</a>
+{%endblock%}
